@@ -1,0 +1,35 @@
+<DOCTYPE html>
+     
+<html> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<head> 
+    <script type="text/javascript"> 
+    var c=0 
+    var t 
+    function timedCount() 
+    { 
+    document.getElementById('txt').value=c 
+    c=c+1 
+    t=setTimeout("timedCount()",1000) 
+    } 
+    function stopCount() 
+    { 
+    clearTimeout(t) 
+    } 
+    </script> 
+</head> 
+<body> 
+    <form> 
+    <input type="button" value="开始计时！" onClick="timedCount()"> 
+    <br>
+    <br>
+    Time passed &nbsp &nbsp<input type="text" id="txt" size="5px">&nbsp s
+    <br>
+    <br>
+    <input type="button" value="停止计时！" onClick="stopCount()" > 
+    </form> 
+    
+</body> 
+</html> 
+    
+    
