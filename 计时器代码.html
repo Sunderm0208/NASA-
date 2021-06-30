@@ -3,31 +3,30 @@
 <html> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <head> 
-    <script type="text/javascript"> 
-    var c=0 
-    var t 
-    function timedCount() 
-    { 
-    document.getElementById('txt').value=c 
-    c=c+1 
-    t=setTimeout("timedCount()",1000) 
-    } 
-    function stopCount() 
-    { 
-    clearTimeout(t) 
-    } 
-    </script> 
+   <style>
+       #demo{
+           color: red;
+
+       }
+   </style>
 </head> 
 <body> 
-    <form> 
-    <input type="button" value="开始计时！" onClick="timedCount()"> 
-    <br>
-    <br>
-    Time passed &nbsp &nbsp<input type="text" id="txt" size="5px">&nbsp s
-    <br>
-    <br>
-    <input type="button" value="停止计时！" onClick="stopCount()" > 
-    </form> 
+    <input type="button" onclick="timing()" value="计时开始" />
+     <h1> Time passed: <span id="demo">0 s</span>  </h1>
+    <script>
+        function timing(){
+            var Obody=document.getElementById("demo");
+            var i=0
+            setInterval(updateNum,1000)
+            updateNum();
+
+            function updateNum(){
+                var j=i++;
+                Obody.innerHTML=j+"s";
+            }
+        }
+    </script>
+
     
 </body> 
 </html> 
