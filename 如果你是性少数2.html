@@ -1,0 +1,503 @@
+<DOCTYPE html>
+    <html>
+        
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如果你是“性少数”</title>
+        <style>
+
+            video{
+            position: fixed;
+            margin-left: 0px;
+            margin-top: 0px;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;}
+        #tupianqiehuan1{
+            width: 1000px;
+            height: 1000px;
+            margin: auto;
+            text-align: center;}
+        #tupianqiehua2{
+            width: 1000px;
+            height: 1000px;
+            margin: auto;
+            text-align: center;}
+        #tupianqiehuan3{
+            width: 1000px;
+            height: 1000px;
+            margin: auto;
+            text-align: center;}
+        #qiehuananniu{
+            margin-left: 48%;
+            width: 70px;
+            height: 42px;
+            font-size: large;}
+        #tiaoguo{
+            width: 70px;
+            height: 42px;
+            font-size: large;}
+        #xingbieceshi{
+            color: white;
+            margin-left: 46%;
+            font-size: 30px;}
+        #gender{
+            height: 40px;
+            width: 120px;}
+        #orientation{
+            height: 40px;
+            width: 120px;}
+        #shengchengwenjuan{
+            width: 70px;
+            height: 42px;
+            font-size: large;}
+        #xianyanpanduan{
+            color: white;
+            font-size: 20px;
+            text-align: center;}
+        #xiuenai{
+            height: 40px;
+            width: 120px;
+            text-align: center;
+            margin-left: 46%;}
+        #zhufu{
+            height: 40px;
+            width: 120px;
+            text-align: center;
+            margin-left: 46%;}
+        #gulizuozhe{
+            height: 40px;
+            width: 120px;
+            text-align: center;
+            margin-left: 46%;}
+        #ruma{
+            height: 40px;
+            width: 120px;
+            text-align: center;
+            margin-left: 46%;}
+        #lgbt{
+            background-color: black;
+            border-color: white;
+            border-style: solid;}
+        #wnajie{
+            margin-left: 48%;
+            width: 70px;
+            height: 42px;
+            margin-top: 30px;
+            font-size: large;}
+        #shengcheng{
+            
+            font-size: large;
+            color:white;
+            width: 60px;
+            height: 25px;
+            margin-left: 19px;}
+        #anniu{
+            position: absolute;
+            z-index: -1;
+            width: 80px;
+            height: 40px;
+            margin-top: -8px;
+            margin-left: 2px;}
+        #shitouanniu{
+            margin-left: 47%;}
+        #yixinglianxinshijie{
+            color: white;
+            font-size: 30px;
+            text-align: center;}
+        
+        </style>
+    </head>
+    <body>
+        <video autoplay="autoplay" loop="true" >
+            <source src="预览视频.mp4" type="video/mp4">
+        </video>
+
+
+        <div id="tupianqiehuan1">
+        <img id="img1" src="img/1.JPG" width="55%" height="55%"/>
+        <br>
+        <br>
+        <br>
+        <input id="qiehuananniu" type="button" onclick="qiehuan()" value="继续"/>
+        <a href="#tiaoguo"><input id="tiaoguo" type="button" value="跳过"></a>
+        </div>
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        
+        <div id="xingbieceshi">
+            
+            <div id="help">
+            你的生理性别：
+            <br><br><br><br>
+            <input id="gender" type="text"/>
+            <br><br><br><br>
+            你的性取向：
+            <br><br><br><br>
+            <input  id="orientation" type="text"/>
+             <br><br><br><br>
+            <input id="shengchengwenjuan" type="button" value="生成问卷" onclick="wenjuan()"/>
+            <a name="tiaoguo"></a>
+            </div>
+        </div>
+
+
+        <div id="xianyanpanduan">
+        <div id="lgbt">
+            你曾经遭遇过的：
+            <br>
+            <br>
+            <input type="radio" value=""/>被同情<br>
+            <br>
+            <br>
+            <input type="radio" value=""/>被讨厌<br>
+            <br>
+            <br>
+            <input type="radio" value=""/>被疏远<br>
+            <br>
+            <br>
+            <input type="radio" value=""/>被辱骂<br>
+            <br>
+            <br>
+            <input type="radio" value=""/>父母因为我喜欢同性而跟我断绝关系<br>
+            <br>
+            <br>
+            <input type="radio" value=""/>我身边的同性朋友对我心存芥蒂<br>
+            <br>
+            <br>
+            <input type="radio" value=""/>法律不能维护我与我同性爱人之间的婚姻<br>
+            <br>
+            <br>
+            <input type="radio" value=""/>我曾经被误解<br>
+            <br>
+            <br>
+            <input type="radio" value=""/>我深深隐藏自己的秘密<br>
+            <br>
+            <br>
+        </div>
+       
+
+        <div id="bl">
+            <p style="background-color: black;border: white;border-style: solid;">浏览微博的时候，你看到一对同性恋人在秀恩爱，你会（）</p>
+            <input type="radio" name="people1" value="1"/>开喷 
+            &nbsp&nbsp<input type="radio" name="people1" value="2"/>祝福
+            <div id="xiuenai">
+            <p>你会骂什么？</p>
+            <input type="text" id="t1"/>
+            </div>
+            <div id="zhufu">
+            <p>你会祝福什么？</p>
+            <input type="text" id="t2"/>
+            </div>
+            <br><br><br><br>
+            <p style="background-color: black;border: white;border-style: solid;">你看到网络上有大大在更新bl向的小说，你会（）</p>
+            <input type="radio" name="people2" value="3"/>举报，必须下架！
+            &nbsp&nbsp<input type="radio" name="people2" value="4"/>鼓励作者
+            <div id="gulizuozhe">
+            <p>你会鼓励什么？</p>
+            <input type="text" id="t3"/>
+            </div>
+            <br><br><br><br>
+            <p style="background-color: black;border: white;border-style: solid;">你看到一对同性恋人在牵手散步，你会（）</p>
+            <input type="radio" name="people3" value="5"/>辱骂
+            &nbsp&nbsp<input type="radio" name="people3" value="6"/>礼貌路过
+            <div id="ruma">
+            <p>你会骂什么？</p>
+            <input type="text" id="t4" />
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p style="background-color: black;border: white;border-style: solid;">你看到一对同性恋人深情相拥，你会（）</p>
+            <input type="radio" name="people4" value="7"/>觉得新奇 盯着他们
+            &nbsp&nbsp<input type="radio" name="people4" value="8"/>礼貌路过
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p style="background-color: black;border: white;border-style: solid;">你发现那对相拥的同性恋人中有你的儿子，你会（）</p>
+            <input type="radio" name="people5" value="9"/>打骂他
+            &nbsp&nbsp<input type="radio" name="people5" value="10"/>尊重隐私 回家谈心
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p style="background-color: black;border: white;border-style: solid;">你看到有个带着彩虹手环的同性走进了你所在的洗手间，你会（）</p>
+            <input type="radio" name="people6" value="11"/>把他赶出去
+            &nbsp&nbsp<input type="radio" name="people6" value="12"/>路过
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p style="background-color: black;border: white;border-style: solid;">你在相亲角，看到一个母亲，拿着一把彩虹伞，正在给自己的儿子找男朋友，你会（）</p>
+            <input type="radio" name="people7" value="13"/>把这位母亲赶出去
+            &nbsp&nbsp<input type="radio" name="people7" value="14"/>路过
+        </div>
+        </div>
+        <br><br><br><br>
+        
+        <div id="shitouanniu" >
+        <img src="按钮.jpg" id="anniu" />
+        <span id="shengcheng" >生成</span>
+        </div>
+        
+
+          <div id="tupianqiehua2" >
+            <img id="img2" src="img1/16.JPG" width="55%" height="55%"/>
+            <br>
+            <input type="button" value="继续" id="qiehuananniu1" onclick="qiehuan2()" />
+        </div>
+        <div id="tupianqiehuan3">
+            <img id="img3" src="img2/35.JPG" width="55%" height="55%"/>
+            <br>
+            <input type="button" value="继续" id="qiehuananniu2" onclick="qiehuan3()"/>
+        </div>
+
+        <div id="yixinglianxinshijie">
+            <div id="xinshijie1">
+                <p style="background-color: black;border: white;border-style: solid;">经过了无数个不眠之夜，你的小说终于写成了，故事讲述了男女主角在乱世中不顾世人的阻拦毅然相爱，你要发布这篇小说么？</p>
+                <input type="radio" value="15" name="aa"/>我要发布，我要出名！
+                <div id="111">
+                    <p>你的小说引起了很多人的攻击，甚至被举报下架！</p>
+                    <p>很不幸 自我认同：-10分</p>
+                </div>
+                <div id="222">
+                    <p >作品上线后，引起了巨大的反响，有很多人发私信鼓励你，他们说：</p>
+                    <p id="p1"></p>
+                    <p>你很开心，充满了自信</p>
+                    <p>恭喜你啦 自我认同：+10分</p>
+                </div>
+                <input type="radio" value="16" name="aa"/>担心被骂，自己看看就好了
+                <div id="333">
+                    <p>你还是不甘心，为什么辛辛苦苦写完的作品，却连跟读者见面的机会都没有！</p>
+                    <p>很不幸 自我认同：-8分</p>
+                </div>
+                <p style="background-color: black;border: white;border-style: solid;">这天，你与你的爱人一起出游，你很喜欢你们的和合照，你要把它发布在网络上么？</p>
+                <input type="radio" value="17" name="bb"/>好呀！我要让大家都知道我的ta有多可爱
+                <div id="444">
+                    <p>第二天打开朋友圈，你看多有很多人评论，他们说：</p>
+                    <p id="p2"></p>
+                    <p>你很难过，你想为什么你的爱情被所有人诅咒呢？你跟爱人大吵了一架。</p>
+                    <p>很不幸 自我认同：-10分 爱情甜蜜值：-15分</p>
+                </div>
+                <div id="555">
+                    <p>第二天你打开朋友圈，你发现自己收获了很多祝福，他们说</p>
+                    <p id="p3"></p>
+                    <p>你很开心，自己的爱情被人祝福了。</p>
+                    <p>恭喜你啦 自我认同：+10分 爱情甜蜜值：+15分</p>
+                </div>
+                <input type="radio" value="18" name="bb"/>不要了吧……
+                <div id="666">
+                    <p>你的爱人很生气，质问你“你是不是嫌弃我？”</p>
+                    <p>你们大吵了一架</p>
+                    <p>很不幸 自我认同：-10分 爱情甜蜜值：-15分</p>
+                </div>
+                <p style="background-color: black;border: white;border-style: solid;">吃过晚饭之后，你的爱人提出要一起出门散步，ta牵起你了你的手，你会选择？</p>
+                <input type="radio" value="19" name="cc"/>握紧ta的手，相视一笑
+                <div id="777">
+                    <p>有路人投来奇异的目光（md）</p>
+                    <p>他们路过你的时候，你听到他们小声议论：</p>
+                    <p id="p4"></p>
+                    <p>你很生气，也很难过</p>
+                    <p>很不幸 自我认同：-10分 爱情甜蜜值：-15分</p>
+                </div>
+                <div id="888">
+                    <p>你有点忐忑地走在路上，害怕路人会对你另眼相看。</p>
+                    <p>但是路人并没有注意到你们，他们只是礼貌地路过</p>
+                    <p>恭喜你啦 自我认同：+10分 爱情甜蜜值：+15分</p>
+                </div>
+                <input type="radio" value="20" name="cc"/>迅速撇开，装作什么都没有发生过
+                <div id="999">
+                    <p>你的爱人生气的问到：“你什么意思！”</p>
+                    <p>你努力解释，但是ta完全沉浸在愤怒里</p>
+                    <p>很不幸 自我认同：-10分 爱情甜蜜值：-15分</p>
+                </div>
+                <p style="background-color: black;border: white;border-style: solid;">你跟你的爱人已经在一起5年了，你要不要把这段爱情告诉你的父母？</p>
+                <input type="radio" value="21" name="dd"/>要！
+                <div id="000">
+                    <p>你鼓起勇气向你的父母说明了这件事</p>
+                    <p>他们愣了一下，把你赶出了家门</p>
+                    <p>你的父亲在你离开时吼到：“要么分手，要么你再也不是我的孩子！”</p>
+                    <p>很不幸 自我认同：-20分 爱情甜蜜值：-15分</p>
+                </div>
+                <div id="101">
+                    <p>你鼓起勇气向父母说明了这件事</p>
+                    <p>你本以为自己会受到他们的一顿棒打</p>
+                    <p>父母对视了一眼跟你说：“你幸福就好。”</p>
+                    <p>恭喜你啦 自我认同：+20分 爱情甜蜜值：+15分</p>
+                </div>
+                <input type="radio" value="22" name="dd"/>我不太敢
+                <div id="102">
+                    <p>你闷闷不乐，总是在想</p>
+                    <p>为什么，连我的父母也不能支持我的爱情？</p>
+                    <p>很不幸 自我认同：-10分 爱情甜蜜值：-15分</p>
+                </div>
+                <p style="background-color: black;border: white;border-style: solid;">今天出门的时候，你没有带彩虹手环，你看了看厕所里的人都带着手环，你还要进去么？</p>
+                <input type="radio" value="23" name="ee"/>憋不住，进去
+                <div id="103">
+                    <p>上厕所的大哥看了一眼你的手腕</p>
+                    <p>朝你淬了一口唾沫</p>
+                    <p>“你个异性恋，滚出去！”</p>
+                    <p>很不幸 自我认同：-20分 爱情甜蜜值：-10分</p>
+                </div>
+                <div id="104">
+                    <p>上厕所的大哥看了你一眼，你吓得一哆嗦</p>
+                    <p>但是他只是对你礼貌地笑了笑</p>
+                    <p>恭喜你啦 自我认同：+15分 爱情甜蜜值：+10分</p>
+                </div>
+                <input type="radio" value="24" name="ee"/>憋不住也要憋
+                <div id="105">
+                    <p>你在商场里疯狂地找一个没有人的厕所</p>
+                    <p>你这个时候觉得无比委屈，为什么不带彩虹手链连上厕所都不可以</p>
+                    <p>很不幸 自我认同：-10分 爱情甜蜜值：-10分</p>
+                </div>
+                <p style="background-color: black;border: white;border-style: solid;">你的小孩也是异性恋，ta希望你帮ta去相亲角相亲，你会去么？</p>
+                <input type="radio" value="25" name="ff"/>去！希望我的孩子也能收获爱情
+                <div id="106">
+                    <p>你的身边都是彩虹伞，只有你一个人撑着一把白色的伞</p>
+                    <p>你被人赶了出去</p>
+                    <p>“滚啊！真是恶心！”</p>
+                    <p>很不幸 自我认同：-35分 爱情甜蜜值：-15分</p>
+                </div>
+                <div id="107">
+                    <p>本来你还挺害怕的</p>
+                    <p>结果环顾四周 大家都在做自己的事情</p>
+                    <p>过了一会儿，有位母亲走到你面前：“你儿子好帅哦，你看我女儿怎么样？”</p>
+                    <p>恭喜你啦 自我认同：+30分 爱情甜蜜值：+20分</p>
+                </div>
+                <input type="radio" value="26" name="ff"/>乖～咱不去
+                <div id="108">
+                    <p>你的儿子很生气：“你也以我为耻么？”</p>
+                    <p>你很无奈，也很委屈，你只是不想让他受到伤害啊</p>
+                    <p>很不幸 自我认同：-20分 爱情甜蜜值：-15分</p>
+                </div>
+            </div>
+            <div id="xinshijie2">
+                <p>待开发 再见</p><!--本来是想针对同性恋和异性恋两个人群的 但是同性恋的真的做不完了-->
+
+            </div>
+        </div>
+        <div id="score">
+            <span>自我认同：</span>
+            <span>爱情甜蜜值：</span>
+
+        </div>
+        <div id="wnajie" onclick="wanjie()">
+            <input type="button" value="生成游戏报告"/>
+        </div>
+   
+
+
+        <script>
+            var i=1;function qiehuan(){i++;document.getElementById("img1").src="img/"+i+".JPG";}//点击button图片进行切换
+            var Olgbt=document.getElementById("lgbt");Olgbt.style.display="none";//先把这个隐藏起来
+            var Obl=document.getElementById("bl");Obl.style.display="none";//先把个隐藏起来
+            var Oxiuenai=document.getElementById("xiuenai");Oxiuenai.style.display="none";//先把这个隐藏起来
+            var Ozhufu=document.getElementById("zhufu");Ozhufu.style.display="none";//先把这个隐藏起来
+            var Ogulizuozhe=document.getElementById("gulizuozhe"); Ogulizuozhe.style.display="none";//先把这个隐藏起来
+            var Oruma=document.getElementById("ruma");Oruma.style.display="none";//先把这个隐藏起来
+            var Oshitouanniu=document.getElementById("shitouanniu");Oshitouanniu.style.display="none";//先把这个隐藏起来
+            var Oscore=document.getElementById("score");Oscore.style.display="none";
+            function wenjuan (){
+                var Ogender=document.getElementById("gender").value;
+                var Oorientation=document.getElementById("orientation").value;
+                var Oxingbieceshi=document.getElementById("xingbieceshi");
+                var Ohelp=document.getElementById("help")
+                if(Ogender==Oorientation){//判断是不是同性恋
+                    Oxingbieceshi.removeChild(Ohelp);//删除原有的元素
+                    var Olgbt=document.getElementById("lgbt");
+                    Olgbt.style.display="block";//让他出现
+                    var Obl=document.getElementById("bl");
+                    Obl.style.zIndex="-1";
+                    Oshitouanniu.style.display="block";}
+                if(Ogender!==Oorientation){
+                    Oxingbieceshi.removeChild(Ohelp);//删除原有的元素
+                    var Oxianyanpanduan=document.getElementById("xianyanpanduan");
+                    var Olgbt=document.getElementById("lgbt");
+                    var Obl=document.getElementById("bl");
+                    Obl.style.display="block";//让他出现
+                    Oshitouanniu.style.display="block";
+                    var Ainputs = Obl.querySelectorAll('input');
+                    for(var w = 0; w < Ainputs.length; w++){Ainputs[w].onclick = function() {
+                    if(this.value == 1) {var Oxiuenai=document.getElementById("xiuenai");Oxiuenai.style.display="block";}              
+                    else if(this.value == 2){var Ozhufu=document.getElementById("zhufu");Ozhufu.style.display="block";}
+                    else if(this.value == 4){var Ogulizuozhe=document.getElementById("gulizuozhe");Ogulizuozhe.style.display="block";}
+                    else if(this.value == 5){var Oruma=document.getElementById("ruma");Oruma.style.display="block";}//让一些文本框显示出来
+                     }}}}
+                    var Otupianqiehuan3=document.getElementById("tupianqiehuan3");Otupianqiehuan3.style.display="none";
+                    var Otupianqiehua2=document.getElementById("tupianqiehua2");Otupianqiehua2.style.display="none";
+                    var Oshitouanniu=document.getElementById("shitouanniu");
+                    var Olgbt=document.getElementById("lgbt");
+                    var Obl=document.getElementById("bl");
+                    var Oxianyanpanduan=document.getElementById("xianyanpanduan");
+                    var Oyixinglianxinshijie=document.getElementById("yixinglianxinshijie");
+                    var Ogender=document.getElementById("gender").value;
+                    var Oorientation=document.getElementById("orientation").value;
+                    var Oxinshijie1=document.getElementById("xinshijie1");Oxinshijie1.style.display="none";
+                    var Oxinshijie2=document.getElementById("xinshijie2");Oxinshijie2.style.display="none";
+                    var O111=document.getElementById("111");O111.style.display="none";
+                    var O222=document.getElementById("222");O222.style.display="none";var O333=document.getElementById("333");O333.style.display="none";
+                    var O444=document.getElementById("444");O444.style.display="none";var O555=document.getElementById("555");O555.style.display="none";
+                    var O666=document.getElementById("666");O666.style.display="none";var O777=document.getElementById("777");O777.style.display="none";
+                    var O888=document.getElementById("888");O888.style.display="none";
+                    var O999=document.getElementById("999");O999.style.display="none";
+                    var O000=document.getElementById("000");O000.style.display="none";
+                    var O101=document.getElementById("101");O101.style.display="none";
+                    var O102=document.getElementById("102");O102.style.display="none";
+                    var O103=document.getElementById("103");O103.style.display="none";
+                    var O104=document.getElementById("104");O104.style.display="none";
+                    var O105=document.getElementById("105");O105.style.display="none";
+                    var O106=document.getElementById("106");O106.style.display="none";
+                    var O107=document.getElementById("107");O107.style.display="none";
+                    var O108=document.getElementById("108");O108.style.display="none";
+                    var Op1=document.getElementById("p1");var Op2=document.getElementById("p2");var Op3=document.getElementById("p3");
+                    var Op4=document.getElementById("p4");var Ot1=document.getElementById("t1");var Ot2=document.getElementById("t2");
+                    var Ot3=document.getElementById("t3");var Ot4=document.getElementById("t4");var Ojiujiuwo=document.getElementsByClassName("jiujiuwo")
+                    var Owanjie=document.getElementById("wnajie");Owanjie.style.display="none";
+                    var n=16;function qiehuan2(){n++;document.getElementById("img2").src="img1/"+n+".JPG";}//点击button图片进行切换
+                    var m=35;function qiehuan3(){m++;document.getElementById("img3").src="img2/"+m+".JPG";}//点击button图片进行切换
+                    Oshitouanniu.onclick=function() {Oxianyanpanduan.style.display="none";Oshitouanniu.style.display="none";Owanjie.style.display="block";
+                    if(Ogender==Oorientation){Otupianqiehua2.style.display="block";Oxinshijie1.style.display="block";
+                    var Oinputs = document.querySelectorAll('input');
+                    for(var b = 0; b < Oinputs.length; b++){
+                    Oinputs[b].onclick = function() {
+                    if(this.value == 15){
+                    if(Oinputs[16].checked){O222.style.display="block";Op1.innerHTML=Ot3.value;}
+                    if(Oinputs[17].checked){O111.style.display="block";}}
+                    else if(this.value == 16){O333.style.display="block";}
+                    else if(this.value == 17){
+                    if(Oinputs[14].checked){O555.style.display="block";Op3.innerHTML=Ot2.value;}
+                    if(Oinputs[15].checked){O444.style.display="block";Op2.innerHTML=Ot1.value;}}
+                    else if(this.value == 18){O666.style.display="block";}
+                    else if(this.value == 19){
+                    if(Oinputs[18].checked){O777.style.display="block";Op4.innerHTML=Ot4.value;}
+                    if(Oinputs[19].checked){O888.style.display="block";}}
+                    else if(this.value == 20){O999.style.display="block";}
+                    else if(this.value == 21){
+                    if(Oinputs[22].checked) {O101.style.display="block";}
+                    if(Oinputs[23].checked) {O000.style.display="block";}}
+                    else if(this.value == 22){O102.style.display="block";}
+                    else if(this.value == 23) {
+                    if(Oinputs[24].checked){O104.style.display="block";}
+                    if(Oinputs[25].checked)  {O103.style.display="block";}}
+                    else if(this.value == 24){O105.style.display="block";}
+                    else if(this.value == 25){
+                    if(Oinputs[20].checked) {O107.style.display="block";}
+                    if(Oinputs[21].checked) {O106.style.display="block";}}
+                    else if(this.value == 26){O108.style.display="block";}}}}
+                    else{Otupianqiehuan3.style.display="block";Oxinshijie2.style.display="block";}}
+                    function wanjie(){Oxinshijie1.style.display="none"; Otupianqiehua2.style.display="none";alert("自我认同：/n 爱情甜蜜值：/n");}
+        </script>
+    </body>
+    </html>
